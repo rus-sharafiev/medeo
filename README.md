@@ -1,13 +1,14 @@
-# Сайт копании MEDEO
+# Сайт компании MEDEO
 
 ### https://medeo.one/
 
-Дизайн сайта создавался по канонам концепции [Material You](https://m3.material.io/), разработанной Google.  
-Является [прогрессивным web-приложением](https://web.dev/progressive-web-apps/) (PWA), используется [Workbox](https://developer.chrome.com/docs/workbox/) (Precaching + Stale-While-Revalidate)
+Дизайн сайта создавался по канонам концепции [Material You](https://m3.material.io/), разработанной Google.
 
 ### Стек технологий:
 - HTML5
 - CSS3
 - PHP8 
 - MySQL
-- JavaScript / jQuery (ajax, autocomplete)
+- JavaScript 
+    - jQuery (ajax, autocomplete)
+    - PWA / Workbox (Stale-While-Revalidate)

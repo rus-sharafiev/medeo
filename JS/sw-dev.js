@@ -1,15 +1,11 @@
-import { precacheAndRoute } from 'workbox-precaching';
 import { registerRoute, Route } from 'workbox-routing';
-import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
+import { StaleWhileRevalidate } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
-
-// Precache
-precacheAndRoute(self.__WB_MANIFEST);
 
 // Handle images:
 const imageRoute = new Route(({ request }) => {
   return request.destination === 'image'
-}, new CacheFirst ({
+}, new StaleWhileRevalidate ({
   cacheName: 'images',
   plugins: [
     new ExpirationPlugin({

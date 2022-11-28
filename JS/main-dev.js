@@ -6,15 +6,15 @@ import '../CSS/mobile.css';
 import '../CSS/styles.css';
 
 // Register the service worker
-// if ('serviceWorker' in navigator) {
-//     window.addEventListener('load', async () => {
-//         try {
-//             const reg = await navigator.serviceWorker.register('sw.js');
-//         } catch (err) {
-//             console.log('Service worker registration failed: ', err);
-//         }
-//     });
-// }
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+        try {
+            const reg = await navigator.serviceWorker.register('sw.js');
+        } catch (err) {
+            console.log('Service worker registration failed: ', err);
+        }
+    });
+}
 
 // Load NAV
 $('nav').load('nav.php', function() {
