@@ -1,0 +1,16 @@
+{
+  "name": "medeo",
+  "version": "2.0.3",
+  "description": "MEDEO website",
+  "main": "JS/main-dev.js",
+  "scripts": {
+    "watch": "esbuild JS/main-dev.js --outfile=build/index.js --bundle --minify --external:*.woff2 --watch",
+    "build": "esbuild JS/main-dev.js --outfile=build/index.js --bundle --minify --external:*.woff2"
+  },
+  "author": "Rus Sharafiev",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.15.10",
+    "jquery": "^3.6.1"
+  }
+}
